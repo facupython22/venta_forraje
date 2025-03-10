@@ -15,6 +15,7 @@ import re                           # ---> Para Validar campos (Telefono Cliente
 def conectar_bd():
     return sqlite3.connect("venta_semillas.db")
 
+
 def crear_tabla():
     conex = conectar_bd()
     cursor = conex.cursor()
